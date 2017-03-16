@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+html, body {margin:0;padding:0}
+body {text-align: center;font-family: 'Roboto', sans-serif;}
+
+ol, ul, pre {display:inline-block}
+li, pre {text-align:left}
+pre {font-family:consolas, courier, monospace;min-width:600px;padding:1em;}
+.ver-desc {line-height: 8em;}
+.ver-desc ul {margin:0;line-height:normal}
+.ver-desc li {margin:0;line-height:normal}
+.ver-desc span.ib {display:inline-block;line-height:normal}
+
+pre {margin:1em 0 ;background:#f3f3f3}
+
+h1 {margin:1em 0; padding:1em 0;}
+h2 {margin:1.5em 0;}
