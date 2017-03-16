@@ -1,6 +1,6 @@
 # xStorage.js
 
-[xStorage.js online](https://github.com/owebio/xStorage.js)
+[xStorage.js online](https://owebio.github.io/xStorage.js/)
 
 ## Features
 * Supporting data types in Web storage. : array, object, string, number
