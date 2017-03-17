@@ -1,9 +1,10 @@
 # xStorage.js
+web storage util.
 
 [xStorage.js online](https://owebio.github.io/xStorage.js/)
 
 ## Features
-* Supporting data types in Web storage. : array, object, string, number
+* Data types in Web storage. : array, object, string, number
 * Shorthand function. : create, update, remove in one function
 * Stability with other codes to use same web storage. : prefix
 * Practical uses for object and array type values
@@ -18,11 +19,9 @@ var language = xStorage('language');
 // 3. remove data
 xStorage('currency', '');
 ```
-## Practical cases
+## Example
 
 ### Creating Bookmarkstorage
-Don't need to load or to save again.
-Added/updated/modified/created/destroyed/removed, it's saved automatically.
 ``` javascript
 var bookmarkStorage = xStorage.create("bookmark",[]);
 bookmarkStorage.add({name:'google', url:'https://www.google.com'});
