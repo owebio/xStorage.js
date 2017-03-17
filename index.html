@@ -12,10 +12,9 @@
 <a href="https://github.com/owebio/xStorage.js">github</a>
 <h2> Features </h2>
 <ol>
-  <li>Supporting data types in Web storage. : array, object, string, number</li>
-  <li>Shorthand function. : create, update, remove in one function</li>
-  <li>Stability with other codes to use same web storage. : prefix</li>
-  <li>Practical uses for object and array type values </li>
+  <li>Supporting data types : array, object, string, number</li>
+  <li>Shorthand function : create, update, remove in one function</li>
+  <li>Stability with other codes : prefix</li>
 </ol>
 <h2> Shorthand function </h2>
 <pre>// 1. Save data
@@ -25,12 +24,8 @@ var language = xStorage('language');
 // 3. remove data
 xStorage('currency', '');</pre>
 
-<h2> Practical cases </h2>
+<h2> Use cases </h2>
 <h3>Creating Bookmarkstorage</h3>
-<blockquote>
-Don't need to load or to save again.<br>
-Added/updated/modified/created/destroyed/removed, it's saved automatically.
-</blockquote>
 <pre>var bookmarkStorage = xStorage.create("bookmark",[]);
 bookmarkStorage.add({name:'google', url:'https://www.google.com'});
 bookmarkStorage.add({name:'msn', url:'http://www.msn.com'});
@@ -45,12 +40,12 @@ bookmarkStorage.remove(1);
 var firstBookmark = bookmarkStorage(0);
 </pre>
 <h3>User info</h3>
-<pre>var UI = xStorage.create("UI",{});
-UI('language', 'en');
-UI('phone', '010-3452-1392');
-UI('country', 'ko');
-UI('phone', ''); // delete phone
-UI('country'); // return 'ko';
+<pre>var ui = xStorage.create("ui",{});
+ui('language', 'en');
+ui('phone', '010-3452-1392');
+ui('country', 'ko');
+ui('phone', ''); // delete phone
+ui('country'); // return 'ko';
 </pre>
 <h2> xStorage API : Global </h2>
 <ul>
@@ -80,10 +75,11 @@ UI('country'); // return 'ko';
 <h2>Browser Compatibility</h2>
 <h3>IE8</h3>
 <div class="ver-desc">
-<span class="ib">It requires two more as polyfill.</span>
+<span class="ib">It requires three more as polyfill.</span>
 <ul>
   <li> <a href="https://github.com/douglascrockford/JSON-js">JSON</a>
   <li> <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/keys#Polyfill">Object.keys</a>
+  <li> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach">Array.prototype.forEach</a>
 </ul>
 </div>
 

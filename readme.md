@@ -83,5 +83,12 @@ var storage = function(name, value) {
 }
 ```
 ### Extras
+#### UPDATES
 
-* be aware that other's code can use web storage too. So if you want to handle web storage for javascript types, you might need to hand it separately. It's one reason to write this code.  
+* 2017-03-17
+  * fix variable names.
+
+#### IE8 pollyfill
+If you want to use this on IE8, you need three pollyfills.
+
+[JSON](https://github.com/douglascrockford/JSON-js), [Object.keys](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/keys#Polyfill), [Array.prototype.forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)

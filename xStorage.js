@@ -82,7 +82,7 @@ var initStorage = function(key, type, init) {
   _StorageItem.type = type;
   _StorageItem.add   = function(value){
     if (Array.isArray(_StorageItem.data)) {
-      _StorageItem._data.push(value);
+      _StorageItem.data.push(value);
       _StorageItem.save();
     };
     return _StorageItem;
