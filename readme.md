@@ -31,21 +31,21 @@ bookmarkStorage.add({name:'naver', url:'https://www.naver.com'});
 var firstBookmark = bookmarkStorage(0);
 var bookmarkData = bookmarkStorage.data;
 ```
-### Modifying Bookmark
+### modifying Bookmark
 ``` javascript
 var bookmarkStorage = xStorage.local.bookmark;
 bookmarkStorage(2, {name:'yahoo', url:'https://www.yahoo.com'});
 bookmarkStorage.remove(1);
 var firstBookmark = bookmarkStorage(0);
 ```
-### USER INFO
+### user info
 ``` javascript
-var UI = xStorage.create("UI",{});
-UI('language', 'en');
-UI('phone', '010-3452-1392');
-UI('country', 'ko');
-UI('phone', ''); // delete phone
-UI('country'); // return 'ko';
+var userinfo = xStorage.create("userinfo",{});
+userinfo('language', 'en');
+userinfo('phone', '010-3452-1392');
+userinfo('country', 'ko');
+userinfo('phone', ''); // delete phone
+userinfo('country'); // return 'ko';
 ```
 
 ##  xStorage API : Global
@@ -74,11 +74,11 @@ UI('country'); // return 'ko';
 
 ## MISC
 
-### Short code without using type
+### Shorthand function without using types.
 ``` javascript
 var storage = function(name, value) {
-  if (value) return localStorage.setItem(name, value) && this;
-  else if (name === '') return localStorage.removeItem(name);
+  if (value === '') return localStorage.removeItem(name);
+  else if (value) return localStorage.setItem(name, value) && this;
   else if (name) return localStorage.getItem(name);
 }
 ```
