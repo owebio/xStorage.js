@@ -92,6 +92,6 @@ var storage = function(name, value) {
   * fix variable names.
 
 #### IE8 pollyfill
-If you want to use this on IE8, you need three pollyfills.
+If you want to use this on IE8, you need four pollyfills.
 
-[JSON](https://github.com/douglascrockford/JSON-js), [Object.keys](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/keys#Polyfill), [Array.prototype.forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+[JSON](https://github.com/douglascrockford/JSON-js), [Object.keys](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/keys#Polyfill), Array.isArray(), [Array.prototype.forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
