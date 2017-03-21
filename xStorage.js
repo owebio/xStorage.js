@@ -50,7 +50,7 @@ xStorage.remove = function(name, type) {
 xStorage.clear = function(type) {
   var type = type || 'local';
   Object.keys(window[type + 'Storage']).forEach(function(e, i, a) {
-    if (e.indexof(_prefix) == 0) {
+    if (e.indexOf(_prefix) == 0) {
       window[type + 'Storage'].removeItem(e);
     }
   });
