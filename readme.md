@@ -55,6 +55,7 @@ userinfo('country'); // return 'ko';
 * xStorage.load(name, type); // = xStorage(name, type)
 * xStorage.remove(name, type); // = xStorage(name, '')
 * xStorage.clear(type); // clear storage, type : local | session
+* xStorage.open(name, type, data); // if it's not exist, create new one;
 * xStorage.create(name, initValue, type); // initValue : [] | {}
 * xStorage.local; // local Storage collection
 * xStorage.session; // session Storage collection
