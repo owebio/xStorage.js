@@ -57,8 +57,13 @@ xStorage.clear = function(type) {
   return this;
 };
 xStorage.open   = function(name, type, data) {
-  var type = type || 'local';
-  var data = data || [];
+  if (typeof type == "object") {
+    var data = type;
+    var type = 'local';
+  } else {
+    var type = type || 'local';
+    var data = data || [];
+  }
   if (xStorage[type][_prefix + 'name']) return initStorage(name, type);
   else return xStorage.create(name, data, type);
 };

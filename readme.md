@@ -86,6 +86,8 @@ var storage = function(name, value) {
 ### Extras
 #### UPDATES
 
+* 2017-03-21
+  * added open method, fix bug (wrong methond name)
 * 2017-03-17
   * fix variable names.
 
